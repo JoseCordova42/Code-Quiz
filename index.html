@@ -9,6 +9,34 @@
 </head>
 
 <body>
+    <div class="container">
+        <h2 class="timesUp" style="display: none;">Time's Up!</h2>
+        <div class="startPage">
+            <h1>You're about to take a quiz! Get Ready!</h1>
+            <p>Wrong answers remove seconds from the timer!</p>
+            <button class="startButton">Click here to start!</button>
+            <a href="highscores.html"><button>View High Scores</button></a>
+        </div>
+        <div class="questionsPage" style="display: none;">
+            <h3 class="name"></h3>
+            <h4 class="text"></h4>
+            <div class="fourButtons">
+                <button class="button" id="A"></button>
+                <button class="button" id="B"></button>
+                <button class="button" id="C"></button>
+                <button class="button" id="D"></button>
+            </div>
+            <h2 class="countDown"></h2>
+        </div>
+        <div class="scorePage" style="display: none;">
+            <h2 class="userScore"></h2>
+            <input type="text" size = "25" id="userInitials" placeholder="enter initials and submit score">
+            <button id="scoreSubmit">Submit your score!</button>
+            <br><br>
+            <button class="playAgain">Play Again</button>
+            <a href="highscores.html"><button class="viewHighScores">View High Scores</button></a>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
